@@ -1,0 +1,4 @@
+version_control: github
+src_repo: UbuntuKylin/kylin-ipmsg
+tag_prefix: ""
+separator: "."
