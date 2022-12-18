@@ -1,7 +1,6 @@
-%define debug_package %{nil}
 Name:          kylin-ipmsg
 Version:       1.1.25
-Release:       2
+Release:       3
 Summary:       kylin-ipmsg
 License:       GPL-3
 URL:           https://github.com/UbuntuKylin/kylin-ipmsg
@@ -49,6 +48,9 @@ popd
 
 
 %changelog
+* Thu Dec 08 2022 fushanqing <fushanqing@kylinos.cn> - 1.1.25-3
+- Enable debuginfo for fix strip
+
 * Thu May 26 2022 peijiankang <peijiankang@kylinos.cn> - 1.1.25-2
 - remove {%if 0 and %endif}
 
