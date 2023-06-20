@@ -5,6 +5,7 @@ Summary:       kylin-ipmsg
 License:       GPL-3
 URL:           https://github.com/UbuntuKylin/kylin-ipmsg
 Source0:       %{name}-%{version}.tar.gz
+Patch0:        fix-clang.patch
 
 BuildRequires: qt5-qtbase-devel
 BuildRequires: qtchooser
@@ -23,7 +24,7 @@ BuildRequires: ukui-interface
 Messages is a LAN chat tool with beautiful Gui.
 
 %prep
-%setup -q
+%autosetup -p1
 
 %build
 export PATH=%{_qt5_bindir}:$PATH

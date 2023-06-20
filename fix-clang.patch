@@ -1,0 +1,12 @@
+diff -u -r kylin-ipmsg-1.3.0/src/view/titlebar/menumodule.cpp kylin-ipmsg-1.3.0/src/view/titlebar/menumodule.cpp
+--- kylin-ipmsg-1.3.0/src/view/titlebar/menumodule.cpp	2022-03-04 00:00:00.000000000 +0800
++++ kylin-ipmsg-1.3.0/src/view/titlebar/menumodule.cpp	2023-06-15 23:47:45.000000000 +0800
+@@ -23,7 +23,7 @@
+ #include "view/common/xatom-helper.h"
+ #include "controller/control.h"
+ 
+-menuModule::menuModule(QWidget *parent = nullptr) : QWidget(parent)
++menuModule::menuModule(QWidget *parent) : QWidget(parent)
+ {
+     init();
+ }
